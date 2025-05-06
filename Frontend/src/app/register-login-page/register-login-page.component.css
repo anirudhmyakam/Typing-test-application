@@ -1,0 +1,70 @@
+
+button{
+    color: rgb(158, 170, 247);
+    font-size: 45px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 550;
+    background-color: transparent;
+    /* border-bottom: 2px solid rgb(210, 215, 245); */
+    padding: 1.5% 2% 1.5% 1.5%;
+    border: 0px;
+}
+
+.login{
+    display: inline-block;
+    width: 35%;
+    height: 60%;
+
+    padding: 3% 1% 3% 3%;
+    margin: 5% 1% 2% 8%;
+    position: relative;
+
+}
+
+.switch-register{
+    display: inline-block;
+    width: 40%;
+    height: 20%;
+
+    padding: 2% 2% 2% 4%;
+    margin: 4% 4% 4% 1%;
+
+    position: relative;
+    /* top: 20%;
+    left: 45%; */
+
+    top: -130px;
+}
+
+button:hover{
+
+    box-shadow: 6px 8px 0 rgba(156, 167, 248, 0.168);
+    top: -3px;
+    left: -3px;
+    position: relative;
+}
+
+.register{
+    display: inline-block;
+    width: 35%;
+    height: 60%;
+
+    padding: 3% 1% 3% 1%;
+    margin: 2% 2% 2% 1%;
+    position: relative;
+}
+
+.switch-login{
+    display: inline-block;
+    width: 10%;
+    height: 20%;
+
+    padding: 2% 2% 2% 4%;
+    margin: 4% 1% 4% 19%;
+
+    position: relative;
+    top: -250px;
+}
+
+
+

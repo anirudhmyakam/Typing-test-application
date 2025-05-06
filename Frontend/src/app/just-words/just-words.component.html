@@ -1,0 +1,30 @@
+
+    <div class="whole">
+    <!-- <app-selection></app-selection> -->
+    <app-selection (click)="setTimeLimit()"></app-selection>
+    <p *ngIf="time_limit>=60" class="timer">
+        {{minuts | number:"2.0"}}:{{seconds | number:"2.0"}}
+    </p>
+    <p *ngIf="time_limit<60" class="timer">
+        {{seconds | number:"2.0"}}
+    </p>
+
+    <span class="word-display">
+        <span class="letter-display" *ngFor="let letter of (current_word.value.concat(current_word.extra_charecters))"
+            [ngClass]="{
+                'correct-letter': letter.is_correct,
+                'wrong-letter': letter.is_wrong,
+                'current-letter': letter.is_current
+            }">
+            {{letter.value}}
+        </span>
+    </span>
+    <!-- <form class="word-form"> -->
+            <input class="word-input" #myInput type="text" [(ngModel)]="input_word"
+                (input)="on_input()" name="input" (focus)="onFocus()" (blur)="onBlur()" (keyup)="on_backspace($event)">
+    <!-- </form> -->
+</div>
+
+<div *ngIf="!isFocused" class="blur-screen">
+    <p>click here to get focused</p>
+</div>

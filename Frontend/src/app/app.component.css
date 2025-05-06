@@ -1,0 +1,16 @@
+.whole-app {
+    /* display: flex;
+    flex-direction: column; */
+    height: 100vh;
+}
+
+.menubar {
+    height: 10%;
+    /* background-color: aliceblue; */
+    /* border-bottom: 2px solid aliceblue; */
+}
+
+.body {
+    /* height: 80%; */
+    width: 100%;
+}

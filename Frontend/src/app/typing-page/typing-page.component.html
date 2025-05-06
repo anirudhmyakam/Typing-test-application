@@ -1,0 +1,19 @@
+
+<div>
+
+    
+<!-- <app-selection (click)="refreash()"></app-selection> -->
+
+<div *ngIf="variables.mode=='WORDS'">
+    <app-words-limit></app-words-limit>
+</div>
+
+<div *ngIf="variables.mode=='TIME'">
+    <app-paras></app-paras>
+</div>
+
+<div *ngIf="variables.mode=='GAME'">
+    <app-game-one></app-game-one>
+</div>
+
+</div>

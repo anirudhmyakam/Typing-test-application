@@ -1,0 +1,34 @@
+<div class="whole" *ngIf="user_tests">
+<!-- <ul>
+    <li *ngFor="let test of user_tests">{{test.accuracy}} , {{test.wpm}}</li>
+</ul> -->
+
+
+<table class="alltests">
+
+    <tr class="headings">
+        <th>wpm</th>
+        <th>acc</th>
+        <th>mode</th>
+        <th>
+            <div class="wrapper">
+                <div class="infobox">corr/incorr/extra/missed</div>
+              chars
+            </div>
+          </th>
+        <th>data</th>
+    </tr>
+
+    <tr class="tests" *ngFor="let test of user_tests">
+        <td>{{test.wpm}}</td>
+        <td>{{test.accuracy | number:('1.2-2')}}%</td>
+        <td>{{test.mode | lowercase }} {{test.constraints}}</td>
+        <td>{{test.correctCharacters}}/{{test.incorrectCharacters}}/{{test.extraCharacters}}/{{test.missedCharacters}}</td>
+        <td>{{test.createdAt | date:'dd-MM-yyyy' }} / {{test.createdAt | date:'hh-mm'}}</td>
+    </tr>
+
+</table>
+
+</div>
+
+

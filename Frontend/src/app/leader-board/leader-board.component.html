@@ -1,0 +1,36 @@
+
+
+<div class="all-modes">
+    <p class="mode" (click)="setConstraint(15)" [ngClass]="{'selected':constraints==15}" >time 15</p>
+    <p class="mode" (click)="setConstraint(30)" [ngClass]="{'selected':constraints==30}" >time 30</p>
+    <p class="mode" (click)="setConstraint(60)" [ngClass]="{'selected':constraints==60}" >time 60</p>
+</div>
+
+
+<div class="whole-leaderboard" *ngIf="leaderboard">
+
+    <table class="alltests">
+    
+        <tr class="headings">
+            <th>rank</th>
+            <th>name</th>
+            <th>wpm</th>
+            <th>raw</th>
+            <th>acc</th>
+            <th>consistency</th>
+            <th>data</th>
+        </tr>
+    
+        <tr class="tests" *ngFor="let user of leaderboard; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.wpm}}</td>
+            <td>{{user.raw}}</td>
+            <td>{{user.accuracy | number:('1.2-2')}}%</td>
+            <td>{{user.consistency}}</td>
+            <td>{{user.date | date:'dd-MM-yyyy' }} / {{user.date | date:'hh-mm'}}</td>
+        </tr>
+        
+    </table>
+    
+    </div>

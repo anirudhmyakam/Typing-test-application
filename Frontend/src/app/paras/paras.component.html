@@ -1,0 +1,58 @@
+
+<div class="top-things">
+    <div *ngIf="!is_test_started">
+        <app-selection (click)="setTimeLimit()"></app-selection>
+    </div>
+
+    <div *ngIf="time_limit>=60 && is_test_started" class="timer">
+        {{minuts | number:"2.0"}}:{{seconds | number:"2.0"}}
+    </div>
+    <div *ngIf="time_limit<60 && is_test_started" class="timer">
+        {{seconds | number:"2.0"}}
+    </div>
+
+</div>
+
+<div class="whole-paras">
+
+
+    <div class="sentence" [style.top.px]="sentence_scroll" [ngClass]="{'blur-effect':!isFocused}">
+
+        <div class="words-display" [ngClass]="{
+                'current-word':curnt_word.is_current
+            }"
+            *ngFor="let curnt_word of words_bank" #displayedword>
+
+            <div class="letters-display"  *ngFor="let letter of (curnt_word.value.concat(curnt_word.extra_charecters))">
+
+                <div class="letter" [ngClass]="{
+                    'correct-letter': letter.is_correct && curnt_word.is_current,
+                    'wrong-letter': letter.is_wrong,
+                    'current-letter': letter.is_current
+                }">
+                {{letter.value}}
+                </div>
+
+            </div>
+
+            <div class="space-display" [ngClass]="{
+                'current-letter': space.is_current && curnt_word.is_current
+            }"></div>
+
+        </div>
+
+    </div>
+
+
+        <input autocomplete="off" class="word-input" #myInput type="text" [(ngModel)]="input_word"
+            (input)="on_input()" name="input" (focus)="onFocus()" (blur)="onBlur()" (keyup)="on_backspace($event)">
+
+    <div *ngIf="!isFocused" class="blur-screen">
+        <p class="blur-message"><img src="assets\images\cursor.png" height="30px" width="auto">   click here to get focused</p>
+    </div>
+</div>
+
+
+<!-- <p class="dot">.</p> -->
+
+

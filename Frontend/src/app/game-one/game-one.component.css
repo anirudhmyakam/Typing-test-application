@@ -1,0 +1,81 @@
+
+.word-display {
+    position: absolute;
+    color: rgba(147, 159, 255, 0.67);
+    border: 6px solid #B983FF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+.start{
+    font-size: 20px;
+    line-height: 70px;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    color: aliceblue;
+}
+
+
+.letter-display {
+    font-size: 70px;
+    line-height: 70px;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    /* font-variation-settings: "wdth" 100, "YTLC" 500; */
+}
+
+
+.blur-screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #fef9ff;
+  font-size: 20px;
+  background-color: #c1a7ce33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+  .current-word{
+    color: rgb(255, 255, 255);
+  }
+  
+  .word-input{
+    height: 0px;
+    width: 0px;
+    opacity: 0.0;
+  }
+  
+  
+  .correct-letter{
+    color: rgb(237, 218, 251);
+  }
+  
+  .wrong-letter{
+    color: rgb(233, 92, 92);
+  }
+
+  
+  
+  .current-letter {
+    position: relative;
+    color: white; /* Text color */
+    
+  }
+  

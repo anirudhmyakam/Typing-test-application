@@ -1,0 +1,30 @@
+
+<!-- <app-menu-bar></app-menu-bar> -->
+<app-selection></app-selection>
+
+<div class="slider">
+
+  <span *ngFor="let crnt_word of word_slide"
+    class="word-display"
+    [style.top]="crnt_word.top_position + 'px'"
+    [style.left]="100-speed*((timer-crnt_word.created_time)/100) + '%'" >
+    
+    <span 
+      class="letter-display" 
+      *ngFor="let letter of (crnt_word.value.concat(crnt_word.extra_charecters))"
+      [ngClass]="{
+        'correct-letter': letter.is_correct,
+        'wrong-letter': letter.is_wrong,
+        'current-letter': letter.is_current
+      }">
+      {{ letter.value }}
+    </span>
+    </span>
+  
+  <input autocomplete="off" class="word-input" #myInput type="text" [(ngModel)]="input_word"
+    (input)="on_input()" name="input" (focus)="onFocus()" (blur)="onBlur()" (keyup)="on_backspace($event)">
+
+    <div *ngIf="!is_test_started" class="start" (click)="startGame()">Click here to start</div>
+
+</div>
+

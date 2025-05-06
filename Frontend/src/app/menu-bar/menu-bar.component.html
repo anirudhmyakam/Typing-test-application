@@ -1,0 +1,37 @@
+
+<div class="bar">
+    <div class="brand">
+        Annitype
+    </div>
+
+    <div class="icon">
+        <img (click)="navigateToParas()" src="assets\images\keyboard.png">
+    </div>
+
+    <div class="icon">
+        <img (click)="navigateToleaderboard()" src="assets\images\leaderboard.png">
+    </div>
+
+    <div class="icon">
+        <!-- <img src="assets\images\question.png"> -->
+    </div>
+
+
+    <div class="icon" id="person">
+
+        <div *ngIf="!auth.isUserLogedin()">
+            <img (click)="navigateToLogin()" src="assets\images\person.png">
+        </div>
+
+        <div class="wrapper"  *ngIf="auth.isUserLogedin()">
+            <img src="assets\images\person.png">
+
+            <div class="floatbox">
+                <p class="float-items" (click)="navigateToUserinfo()" >user info</p>
+                <p class="float-items" (click)="logout()" >sign out</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>

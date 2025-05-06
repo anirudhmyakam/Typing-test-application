@@ -1,0 +1,100 @@
+
+
+.whole-results{
+    display: block;
+    left: 40%;
+
+    max-width: 300px;
+    position: relative;
+}
+
+.formname{
+    color: rgb(158, 170, 247);
+    font-size: 45px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 550;
+    padding-left: 3%;
+    border-bottom: 2px solid rgb(210, 215, 245);
+    width: 240px;
+}
+
+.small{
+    color: rgb(196, 202, 239);
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 15px;
+    position: relative;
+    font-weight: 300;
+    left: 2%;
+    max-width: 300px;
+    padding: 2px 0 1px 2px;
+    /* margin-bottom: 3px; */
+}
+
+.field{
+    color: rgba(223, 227, 254, 0.968);
+    background-color: rgba(156, 167, 248, 0.168);
+    font-size: 22px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 450;
+
+
+    height: 35px;
+    width: 250px;
+    border-radius: 4px;
+    border: 0px;
+    padding-left: 2%;
+}
+
+.field::placeholder{
+    color: rgb(158, 170, 247);
+    font-size: 22px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 450;
+
+    padding-left: 2%;
+}
+
+.button{
+    background-color: rgba(156, 167, 248, 0.168);
+
+    width: 80px;
+    height: 38px;
+
+    color: rgb(158, 170, 247);
+    font-size: 18px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 450;
+    border: 0px;
+    border-radius: 3px;
+    box-shadow: 2px 4px 0 rgb(137, 151, 245);
+
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.button:hover {
+    box-shadow: 1px 2px 0 rgb(137, 151, 245);
+    top: 2px;
+    left: 1px;
+
+    position: relative;
+  }
+
+.button:active{
+    box-shadow: 0 0 0 rgb(137, 151, 245);
+    top: 4px;
+    left: 2spx;
+}
+
+#otp,#verify-otp{
+    width: 150px;
+    display: inline-block;
+    height: 38px;
+}
+
+button#send-otp{
+    width: 100px ;
+    display: inline-block;
+    margin-right: 20px;
+}

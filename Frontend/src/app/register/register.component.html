@@ -1,0 +1,43 @@
+
+<div class="whole-results">
+
+<form #registerForm="ngForm" class="form" autocomplete="off">
+
+  <h3 class="formname">Register</h3>
+
+    <input class="field" type="text" id="username" #varusername="ngModel" placeholder="username" required name="username" [(ngModel)]="username" required><br>
+    <div class="small" *ngIf="varusername.invalid && varusername.touched">please enter Username</div><br>
+  
+    <input class="field" (input)="newemail()" type="email" id="email" email name="email" placeholder="email" #emailInput="ngModel" [(ngModel)]="email" required><br>
+    <div *ngIf="emailInput.invalid && emailInput.touched">
+      <div class="small" *ngIf="emailInput.errors?.['required']">Please enter the Email.</div>
+      <div class="small" *ngIf="emailInput.errors?.['email']">Invalid email format.</div>
+    </div>
+
+    <!-- <div> -->
+    <div *ngIf="emailInput.valid && emailInput.dirty" style="max-width: 300px;">
+      <br>
+      <button *ngIf="!otpsent" class="button" id="send-otp" (click)="emailVerification()">send otp</button>
+      <button *ngIf="otpsent" class="button" id="verify-otp" (click)="verifyOtp()">Verify</button>
+      <input class="field" type="text" name="otp" id="otp" placeholder="otp" [(ngModel)]="otp" required>
+    </div><br>
+  
+    <input class="field" type="password" id="password" #accpassword="ngModel" placeholder="password" name="password" [(ngModel)]="password" required><br>
+    <div class="small" *ngIf="accpassword.touched && accpassword.invalid">Please enter the password</div><br>
+  
+    <input class="field" type="password" id="verify_password" name="verify_password"  placeholder="verify password" #passwordVerifyInput="ngModel" [(ngModel)]="password_verify" required><br>
+    <div class="small" *ngIf="password !== password_verify && passwordVerifyInput.dirty">
+      Passwords do not match.
+    </div><br>
+
+
+  <div style="max-width: 300px;">
+    <button *ngIf="registerForm.invalid || !is_email_verified" class="button" (click)="reEvaluate()" >Sign up</button>
+    <button *ngIf="registerForm.valid && is_email_verified" class="button" (click)="register()" >Sign up</button><br><br><br>
+  </div>
+  </form>
+
+</div>
+
+
+  <!-- we should add the not match thing in the css for if the email or password is not matched -->

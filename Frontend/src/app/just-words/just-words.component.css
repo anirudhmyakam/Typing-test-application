@@ -1,0 +1,105 @@
+.letter-display{
+  font-size: 50px;
+  color: rgba(147, 159, 255, 0.67);
+  display: inline-block;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:600;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.word-input{
+  height: 0px;
+  width: 0px;
+  opacity: 0.0;
+}
+
+.word-display {
+  display: inline-block; /* Treat each word as a block for spacing */
+  margin-right: 8px; /* Space between words */
+}
+
+.timer{
+  cursor:default;
+  font-size: 40px;
+  color: rgb(233, 245, 255);
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.time-bar{
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  background-color: rgba(39, 37, 37, 0.3);
+  border-radius: 6px;
+  
+  /* opacity: 0.5; */
+}
+
+.time-button{
+  /* display: inline-block; */
+  cursor:default;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:600;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  display: inline-block;
+  padding: 5px 30px;
+  color: rgb(215, 159, 255);
+  /* background-color: rgba(39, 37, 37, 0.3); */
+}
+
+.correct-letter{
+  color: rgb(229, 204, 248);
+}
+
+.wrong-letter{
+  color: rgb(233, 92, 92);
+}
+
+.whole{
+  margin-top: 12%;
+  margin-left: 30%;
+}
+
+.current-letter {
+  position: relative;
+  color: white; /* Text color */
+  border-radius: 4px; /* Rounded corners for the box */
+  padding: 2px 4px; /* Padding around the letter */
+  animation: blink-cursor 1s steps(1, start) infinite; /* Blinking cursor animation */
+}
+
+.blur-screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #fef9ff;
+  font-size: 20px;
+  background-color: #c1a7ce33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Blinking animation */
+@keyframes blink-cursor {
+  0%, 100% {
+    background-color: transparent; /* Full opacity */
+  }
+  50% {
+    background-color: #B983FF; /* No background */
+  }
+}

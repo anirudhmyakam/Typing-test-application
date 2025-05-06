@@ -1,0 +1,24 @@
+
+<div class="whole" *ngIf="login">
+
+    <div class="login">
+        <app-login></app-login>
+    </div>
+
+    <div (click)="setLoginTo(false)" class="switch-register">
+        <button id="sr">Register</button>
+    </div>
+
+</div>
+
+<div class="whole" *ngIf="!login">
+
+    <div (click)="setLoginTo(true)" class="switch-login">
+        <button id="sl">Login</button>
+    </div>
+    
+    <div class="register">
+        <app-register></app-register>
+    </div>
+
+</div>

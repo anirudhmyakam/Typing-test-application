@@ -1,0 +1,38 @@
+
+<div class="whole">
+
+    <div class="mode-const">
+        <div class="cato" id="mode">{{resultmetix.mode}}</div>  <div class="number-up" id="const">{{resultmetix.constraints}}</div>
+    </div>
+
+    <div class="field-up">
+        <div class="number-up">{{resultmetix.wpm | number:'1.0-1'}}</div>
+        <div class="cato">wpm</div>
+    </div>
+
+    <div class="field-up">
+        <div class="number-up">{{resultmetix.accuracy | number:'1.2-2'}}%</div>
+        <div class="cato">acc</div>
+    </div>
+
+    <div class="field-down">
+        <div class="cato">raw</div>
+        <div class="number-down">{{resultmetix.raw | number:'1.0-1'}}</div>
+    </div>
+
+    <div class="field-down">
+        <div class="cato">cons</div>
+        <div class="number-down">{{resultmetix.consistency | number:'1.2-2'}}%</div>
+    </div>
+
+    <div class="field-down">
+        <div class="cato">char</div>
+        <div class="number-down">{{resultmetix.correctCharacters }}/{{resultmetix.incorrectCharacters }}/{{resultmetix.extraCharacters }}/{{resultmetix.missedCharacters }}<div> 
+    </div>
+
+<!-- <p class="" *ngIf="!isuser">Please <a [routerLink]="'/login-register'">login</a> to store your results</p> -->
+</div>
+
+
+
+

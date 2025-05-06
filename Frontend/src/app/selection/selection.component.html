@@ -1,0 +1,22 @@
+
+<div class="whole-selection-bar">
+    <div class="selection-bar">
+        <p class="mode" (click)="changeModeTo('WORDS')" [ngClass]="{'selected-vars':variables.getMode()=='WORDS'}" >words</p>
+        <p class="mode" (click)="changeModeTo('TIME')" [ngClass]="{'selected-vars':variables.getMode()=='TIME'}" >time</p>
+        <p class="mode" (click)="changeModeTo('GAME')" [ngClass]="{'selected-vars':variables.getMode()=='GAME'}" >game</p>
+    </div>
+
+    <div *ngIf="variables.getMode()=='TIME'" class="selection-bar">
+        <p class="selection-button" (click)="variables.setTimeConstraint(15)" [ngClass]="{'selected-vars':variables.getTimeConstraint()==15}" >15</p>
+        <p class="selection-button" (click)="variables.setTimeConstraint(30)" [ngClass]="{'selected-vars':variables.getTimeConstraint()==30}">30</p>
+        <p class="selection-button" (click)="variables.setTimeConstraint(60)" [ngClass]="{'selected-vars':variables.getTimeConstraint()==60}" >60</p>
+        <p class="selection-button" (click)="variables.setTimeConstraint(120)" [ngClass]="{'selected-vars':variables.getTimeConstraint()==120}" >120</p>
+    </div>
+
+    <div *ngIf="variables.getMode()=='WORDS'" class="selection-bar">
+        <p class="selection-button" (click)="variables.setWordConstraint(10)" [ngClass]="{'selected-vars':variables.getWordConstraint()==10}" >10</p>
+        <p class="selection-button" (click)="variables.setWordConstraint(20)" [ngClass]="{'selected-vars':variables.getWordConstraint()==20}" >20</p>
+        <p class="selection-button" (click)="variables.setWordConstraint(50)" [ngClass]="{'selected-vars':variables.getWordConstraint()==50}" >50</p>
+        <p class="selection-button" (click)="variables.setWordConstraint(100)" [ngClass]="{'selected-vars':variables.getWordConstraint()==100}" >100</p>
+    </div>
+</div>
