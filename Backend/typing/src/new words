@@ -1,0 +1,86 @@
+two_letter_words = ["do", "go", "no", "so", "me", "we", "be", "he", "she", "it", "to", "of", "in", "as", "at", "by", "up", "an", "on", "is", "or", "my", "hi", "lo", "ok"]
+
+three_letter_words = ["the", "and", "for", "are", "but", "not", "you", "all", "any", "can", "had", "her",
+"him", "his", "how", "man", "new", "now", "old", "one", "out", "see", "two", "way", "who", "boy", "cow",
+"dog", "eat", "fan", "fat", "fly", "fun", "get", "got", "hat", "hot", "ice", "jam", "jet", "key", "leg",
+"let", "lie", "map", "mat", "nap", "net", "nod", "nut", "old", "out", "pan", "pet", "pit", "pot", "rat",
+"red", "run", "sad", "sat", "see", "set", "sew", "sit", "sky", "son", "sun", "ten", "top", "toy", "try",
+"two", "use", "van", "vet", "war", "way", "wet", "why", "win", "wow", "yes", "yet", "you", "zip"]
+
+four_letter_words = ["that", "this", "they", "with", "what", "when", "were", "have", "from", "your",
+ "will", "would", "been", "much", "many", "must", "some", "over", "into", "than", "then", "also",
+  "back", "away", "down", "home", "here", "near", "only", "well", "very", "good", "best", "last",
+   "most", "such", "even", "made", "make", "like", "time", "year", "know", "take", "come", "want",
+    "look", "find", "give", "tell", "work", "call", "try", "ask", "need", "feel", "mean", "move",
+    "seem", "help", "talk", "show", "hear", "play", "high", "long", "same", "kind", "cool", "fire",
+     "food", "foot", "grow", "hair", "hand", "head", "hear", "hold", "hope", "hour", "idea", "join",
+      "keep", "land", "learn", "left", "life", "live", "love", "main", "mind", "more", "must", "name",
+       "near", "once", "page", "pain", "pair", "past", "path", "pick", "plan", "play", "poor", "rest",
+        "rich", "room", "rule", "safe", "said", "salt", "save", "seek", "sell", "send", "sent", "ship",
+         "shop", "show", "sign", "sing", "size", "skin", "slip", "slow", "snow", "soil", "sold", "some",
+          "song", "soon", "sort", "soul", "sound", "soup", "sour", "span", "spin", "spot", "star", "stay",
+           "step", "stop", "such", "sure", "take", "talk", "task", "team", "tell", "tend", "term", "test",
+            "text", "than", "that", "them", "then", "they", "thick", "thin", "this", "those", "three", "tidy",
+             "time", "tiny", "tire", "told", "took", "tool", "torn", "town", "trap", "tree", "trip", "true", "trust",
+              "truth", "twice", "type", "ugly", "unit", "upon", "urge", "used", "user", "usual", "value", "verse",
+              "very", "view", "vote", "walk", "wall", "want", "warm", "wash", "wave", "wear", "week", "well", "went",
+               "were", "west", "what", "when", "whip", "wide", "wife", "wild", "will", "wind", "wine", "wing",
+                "wise", "wish", "with", "word", "work", "world", "worry", "worth", "would", "wound", "write",
+                "wrong", "wrote", "yard", "year", "yell", "yep", "yes", "yet", "yolk", "your", "youth", "zone"]
+
+five_letter_words = ["about", "after", "again", "could", "would", "should", "these", "those", "there", "their",
+ "which", "where", "first", "other", "right", "never", "since", "still", "think", "going", "might", "every", "under",
+  "above", "great", "world", "leave", "house", "woman", "child", "water", "river", "ocean", "plant", "story", "music",
+   "often", "never", "today", "night", "early", "young", "later", "light", "money", "group", "party", "thing", "point",
+    "place", "right", "wrong", "small", "large", "next", "last", "long", "short", "high", "low", "good", "bad", "new",
+     "old", "cold", "warm", "happy", "sorry", "angry", "tired", "hungry", "thirsty", "sleep", "dream",
+     "awake", "laugh", "smile", "cry", "dance", "sing", "learn", "teach", "study", "write", "read",
+     "speak", "listen", "watch", "think", "know", "believe", "hope", "dream", "start", "begin", "finish",
+      "end", "leave", "arrive", "enter", "exit", "stay", "live", "work", "play", "rest", "travel", "visit",
+      "return", "happen", "become", "change", "grow", "learn", "teach", "study", "write", "read", "speak",
+       "listen", "watch", "think", "know", "believe", "hope", "dream", "start", "begin", "finish", "end",
+       "leave", "arrive", "enter", "exit", "stay", "live", "work", "play", "rest", "travel", "visit", "return",
+       "happen", "become", "change", "grow"]
+
+six_letter_words = ["because", "before", "behind", "beside", "between", "through", "without",
+"against", "another", "around", "enough", "though", "almost", "always", "already", "really",
+"probably", "actually", "suddenly", "together", "however", "therefore", "although", "whether",
+"instead", "perhaps", "several", "general", "special", "certain", "possible", "difficult",
+"important", "different", "familiar", "similar", "original", "national", "personal", "political",
+ "economic", "social", "cultural", "religious", "scientific", "technical", "medical", "legal",
+ "military", "foreign", "domestic", "public", "private", "local", "global", "large", "small",
+ "long", "short", "high", "low", "good", "bad", "new", "old", "cold", "warm", "happy", "sorry",
+  "angry", "tired", "hungry", "thirsty", "sleep", "dream", "awake", "laugh", "smile", "cry",
+   "dance", "sing", "learn", "teach", "study", "write", "read", "speak", "listen", "watch",
+   "think", "know", "believe", "hope", "dream", "start", "begin", "finish", "end", "leave",
+   "arrive", "enter", "exit", "stay", "live", "work", "play", "rest", "travel", "visit",
+    "return", "happen", "become", "change", "grow"]
+
+
+remaining_words = ["abundant", "backbone", "campaign", "daughter", "eclipse", "fabulous", "gardener", "habitats",
+    "identity", "jubilant", "keyboard", "laughter", "magnetic", "navigate", "observer", "pandemic",
+    "quantity", "radiance", "sapphire", "tangible", "umbrella", "vacation", "wanderer", "xylophone",
+    "yearning", "zeppelin", "adaptive", "boundary", "cylinder", "diligent", "evolving", "fortunate",
+    "gracious", "horizon", "inspired", "javelins", "knitting", "luminous", "momentum", "nectarine",
+    "ordinary", "powerful", "question", "resource", "symphony", "treasure", "ultimate", "valuable",
+    "warriors", "xenolith", "yielding", "zealous", "advisory", "blessing", "creative", "dedicate",
+    "elegance", "fidelity", "gigantic", "harmony", "illusion", "juggling", "kinetics", "lightbulb",
+    "memories", "nurtured", "outreach", "playtime", "quirkily", "reliable", "sensible", "traverse",
+    "unifying", "vintage", "whimsical", "xenogene", "yearbook", "zeppelin", "animated", "blizzard",
+    "courtesy", "delicate", "enriched", "festival", "glistens", "heritage", "infinity", "junction",
+    "kaleidoscope", "landscape", "marathon", "narrator", "optimize", "pioneers", "quadrant",
+    "reviving", "stunning", "tropical", "universe", "vitality", "wrestler", "xenogamy", "youngest",
+    "zephyrus"]
+
+
+# You can combine these lists if needed:
+all_words = [two_letter_words, three_letter_words, four_letter_words, five_letter_words, six_letter_words]
+
+# Print the lists or access them individually:
+# print(two_letter_words)
+# print(three_letter_words)
+# ... etc.
+
+# Or to print all lists nicely formatted:
+for i, word_list in enumerate(all_words):
+    print(f"{i+2}-letter words ({len(word_list)}): {word_list}")
